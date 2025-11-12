@@ -1,5 +1,13 @@
+:root {
+    --background-color: steelblue;
+    --border: 1px solid black;
+    --box-shadow: 0 0 30px gray;
+    --width: 150px;
+    --padding: 2px;
+}
+
 nav {
-    background-color: steelblue;
+    background-color: var(--background-color);
     padding: 10px;
 }
 
@@ -14,23 +22,23 @@ main {
 }
 
 main img {
-    width: 150px;
+    width: var(--width);
     height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
 }
 
 h1 {
-    color: steelblue;
+    color: var(--background-color);
 }
 
 img {
-    width: 150px;
+    width: var(--width);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border);
+    padding: var(--padding);
+    box-shadow: var(--box-shadow);
 }
 
 p {
@@ -54,6 +62,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #333;
+    border-top: var(--border);
     text-align: center;
 }
