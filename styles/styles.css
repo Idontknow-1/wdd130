@@ -35,6 +35,7 @@ main img {
     padding: var(--padding);
     box-shadow: var(--box-shadow);
     float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 h1 {
