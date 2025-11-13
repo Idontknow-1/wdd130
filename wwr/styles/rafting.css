@@ -1,8 +1,8 @@
 :root {
     --primary-color: #273469; /* Delft Blue*/
     --secondary-color: #afd2e9; /* Columbia Blue*/
-    --accent1-color: #cf5c36; /* Flame*/
-    --accent2-color: #f9db6d; /* Naples Yellow*/
+    --accent1-color: #DD4927; /* Cinnabar*/
+    --accent2-color: #FFC547; /* Amber*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -61,7 +61,7 @@ h1 {
     color: var(--accent2-color);
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 10px;
     background-color: var(--accent2-color);
