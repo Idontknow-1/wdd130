@@ -23,7 +23,33 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
+header {
+    background-color: var(--accent2-color);
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid var(--accent1-color);
+    padding: 5px;
+}
+
+main {
+    display: grid;
+}
+
+heading {
     font-family: var(--heading-font);
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -50,7 +76,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -76,4 +102,26 @@ h1 {
     border: 2px solid var(--accent1-color);
     margin: 5px;
     opacity: 1;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid var(--accent1-color);
+}
+
+footer p {
+    text-align: center;
 }
