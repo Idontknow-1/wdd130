@@ -120,7 +120,15 @@ nav, p, section, article {
 section {
     padding: 20px;
     border: 1px solid var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.information {
+    text-align: center;
+   
+}
+
 
 footer p {
     text-align: center;
