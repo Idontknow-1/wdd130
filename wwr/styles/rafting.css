@@ -68,9 +68,12 @@ nav, p, section, article {
     justify-content: center;
     text-decoration: none;
     width: 50px;
+    padding: 10px;
 }
 
 nav.socialmedia {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
 }
 
@@ -135,6 +138,10 @@ section .adventure, section .history {
 .information , .information p {
     text-align: center;
     margin: 0;
+}
+
+.information h1 {
+    padding-top: 20px;
 }
 
 .contact {
