@@ -1,8 +1,8 @@
 :root {
     --primary-color: #273469; /* Delft Blue*/
     --secondary-color: #afd2e9; /* Columbia Blue*/
-    --accent1-color: #BA4126; /* Rust*/
-    --accent2-color: #F8E49A; /* Vanilla*/
+    --accent1-color: #273469; /* Rust*/
+    --accent2-color: #afd2e9; /* Vanilla*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -48,6 +48,7 @@ li a {
 
 main {
     display: grid;
+    margin: 0;
 }
 
 heading {
@@ -194,14 +195,29 @@ button {
     border: 1px solid var(--accent1-color);
 }
 
+.employees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.employee-heading{
+    text-align: center;
+    margin: 20px 0;
+}
+
 .employee {
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 .employee img {
-    width: 200px;
+    width: 150px;
+    height: auto;
 }
 
 footer p {
@@ -219,3 +235,100 @@ footer {
     align-items: center;
     width: auto;
 }
+
+/* index html */
+.home-hero img {
+    display: block;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 300px;
+    width: 250px;
+    right: 100px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+    opacity: .9;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.newsletter, form {
+    padding: 10px;
+    width: 350px;
+    display: grid;
+    align-items: center;
+    color: var(--primary-color);
+    border: none;
+}
+
+.newsletter button {
+    margin: 5px;
+    width: 320px;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.call-to-action {
+    padding: 10px;
+    margin: 0;
+}
+
+.call-to-action h2 {
+    position: relative;
+    width: fit-content;
+    top: 70px;
+    left: 27px;
+    color: var(--primary-color);
+    background-color: white;
+    opacity: .9;
+}
+
+.call-to-action img {
+    width: 400px;
+    padding: 10px;
+}
+
+.call-to-action button {
+    position: relative;
+    bottom: 50px;
+    width: 300px;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.call-to-action a {
+    color: white;
+    text-decoration: none;
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+}
+
+.offers img {
+    width: 410px;
+    height: auto;
+    padding: 10px;
+}
+
+.purpose-text , .offer-text {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    color: var(--primary-color);
+}
+
