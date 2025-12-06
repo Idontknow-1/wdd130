@@ -64,7 +64,10 @@ nav, p, section, article {
 }
 
 .socialmedia a {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
+    width: 50px;
 }
 
 nav.socialmedia {
@@ -180,17 +183,14 @@ button {
 }
 
 .employee {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center; */
     display: flex;
     text-align: center;
     justify-content: space-between;
 }
 
-/* .employee h2 {
-    text-align: center;
-} */
+.employee img {
+    width: 200px;
+}
 
 footer p {
     text-align: center;
