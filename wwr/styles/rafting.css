@@ -66,6 +66,10 @@ nav, p, section, article {
     text-decoration: none;
 }
 
+nav.socialmedia {
+    margin-left: auto;
+}
+
 .hero {
     position: relative;
 }
@@ -124,12 +128,12 @@ section .adventure, section .history {
     grid-template-columns: 1fr 1fr;
 }
 
-.information {
+.information , .information p {
     text-align: center;
-   
+    margin: 0;
 }
 
-section .contact {
+.contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -138,17 +142,66 @@ section .contact {
     padding-right: 20px;
 }
 
-.employee {
+form {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: 1fr;
+    color: var(--accent1-color);
+    border: 1px solid var(--accent1-color);
 }
 
-.employee h2 {
-    text-align: center;
+fieldset.username {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-gap: 10px;
+    border: none;
 }
+
+fieldset.purpose {
+    padding: 10px;
+    display: grid;
+    border: none;
+}
+
+fieldset.message {
+    display: grid;
+    padding: 10px;
+    text-align: left;
+    border: none;
+}
+
+button {
+    background-color: var(--accent2-color);
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid var(--accent1-color);
+}
+
+.employee {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center; */
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* .employee h2 {
+    text-align: center;
+} */
 
 footer p {
     text-align: center;
+    flex-grow: 1;
+    margin-right: auto;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
 }

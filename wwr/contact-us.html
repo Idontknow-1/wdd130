@@ -38,8 +38,8 @@
                     width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div>
-                <form action="#">
-                    <fieldset>
+                <form>
+                    <fieldset class="username">
                         <label for="username">Name: </label>
                         <input type="text" id="username" name="username" placeholder="John Doe">
 
@@ -47,21 +47,20 @@
                         <input type="email" id="useremail" name="useremail" placeholder="johndoe123@gmail.com">
 
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="purpose">
                         <label for="purpose"> Message Purpose</label>
 
-                        <input type="radio" id="purpose" name="purpose">
-                        <label for="general">General Inquiry</label>
-                        <input type="radio" id="purpose" name="purpose">
-                        <label for="reservation">Reservation Question</label>
-                        <input type="radio" id="purpose" name="purpose">
-                        <label for="suggestion">Website Suggestion</label>
+                        <label for="general"><input type="radio" id="purpose" name="purpose"> General Inquiry</label>
+                        <label for="reservation"><input type="radio" id="purpose" name="purpose"> Reservation
+                            Question</label>
+                        <label for="suggestion"><input type="radio" id="purpose" name="purpose"> Website
+                            Suggestion</label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="message">
                         <label for="message">Message</label>
                         <textarea name="message" id="message" rows="4" placeholder="Type here"></textarea>
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        <label for="checkbox">Please subscribe me to the monthly newsletter.</label>
+                        <label for="checkbox"><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe
+                            me to the monthly newsletter.</label>
                     </fieldset>
                     <div class="button">
                         <button type="button">Get in Touch!</button>
@@ -69,15 +68,15 @@
                 </form>
             </div>
         </section>
-        <section class="employee">
-            <h2>We Are Here to Serve You</h2>
+        <section>
+            <h2 class="heading">We Are Here to Serve You</h2>
             <div class="employee">
                 <figure>
                     <img src="images/vince-fleming.webp" alt="Employee Profile" width="200px">
                     <figcaption>Manager</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/dillon-kydd.webp" alt="Employee Profile" width="200px">
+                    <img src="images/dillon-kydd.webp" alt="Employee Profile" height="300px">
                     <figcaption>Trainer</figcaption>
                 </figure>
                 <figure>
@@ -91,13 +90,13 @@
         <p>&copy;2025 | Splash White Water Rafting | Iztamaude Mera</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook Icon" width="100">
+                <img src="images/facebook.svg" alt="Facebook Icon" width="50px">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram Icon" width="100">
+                <img src="images/instagram.svg" alt="Instagram Icon" width="50px">
             </a>
             <a href="https://youtube.com">
-                <img src="images/youtube.svg" alt="Youtube Icon" width="100">
+                <img src="images/youtube.svg" alt="Youtube Icon" width="50px">
             </a>
         </nav>
     </footer>
