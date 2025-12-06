@@ -174,6 +174,11 @@ fieldset.purpose {
     border: none;
 }
 
+.purpose p {
+    margin: 0;
+    padding: 0;
+}
+
 fieldset.message {
     display: grid;
     padding: 10px;
