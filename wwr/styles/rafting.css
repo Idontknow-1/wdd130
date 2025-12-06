@@ -24,7 +24,7 @@ header, main, footer {
 }
 
 header {
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     padding: 10px;
     display: grid; 
     grid-template-columns: 1fr 1fr;
@@ -41,7 +41,7 @@ li a {
     color: var(--primary-color);
     font-weight: 700;
     text-decoration: none;
-    border: 1px solid var(--accent1-color);
+    border: 1px solid var(--primary-color);
     padding: 5px;
 }
 
@@ -117,7 +117,7 @@ nav, p, section, article {
     text-align: center;
 }
 
-section {
+section .adventure, section .history {
     padding: 20px;
     border: 1px solid var(--accent1-color);
     display: grid;
@@ -129,6 +129,25 @@ section {
    
 }
 
+section .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map {
+    padding-right: 20px;
+}
+
+.employee {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.employee h2 {
+    text-align: center;
+}
 
 footer p {
     text-align: center;
