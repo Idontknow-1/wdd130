@@ -236,7 +236,7 @@ footer {
     width: auto;
 }
 
-/* index html */
+/* index CSS */
 .home-hero img {
     display: block;
     width: 100vw;
@@ -330,5 +330,62 @@ section {
     position: relative;
     top: 50px;
     color: var(--primary-color);
+}
+
+/* Trips CSS */
+.trips-call-to-action {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 40px;
+    background-color: var(--accent2-color);
+}
+
+.trips-call-to-action a {
+    color: white;
+    text-decoration: none;
+}
+
+.trips-call-to-action button {
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    background-color: var(--primary-color);
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.description h2 {
+    grid-area: 1 / 1 / 2 / 4;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: var(--accent1-color);
+}
+
+.description img {
+    width: 250px;
+    padding-left: 20px;
+}
+
+.forest {
+    grid-area: 3 / 1 / 4 / 2;
+    padding-top: 20px;
+}
+
+.rapid {
+    grid-area: 3 / 2 / 4 / 3;
+    padding-top: 20px;
+}
+
+.beginner {
+    grid-area: 3 / 3 / 4 / 4;
+    padding-top: 20px;
 }
 
