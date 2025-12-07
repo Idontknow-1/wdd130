@@ -7,6 +7,7 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* Standard CSS */
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +24,17 @@ header, main, footer {
     margin: 0 auto;
 }
 
+main {
+    display: grid;
+    margin: 0;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header CSS */
 header {
     background-color: var(--secondary-color);
     padding: 10px;
@@ -46,22 +58,21 @@ li a {
     padding: 5px;
 }
 
-main {
-    display: grid;
-    margin: 0;
-}
-
-heading {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+/* Footer CSS */
+footer p {
     text-align: center;
-    padding: 16px;
+    flex-grow: 1;
+    margin-right: auto;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0 auto;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    width: auto;
 }
 
 .socialmedia a {
@@ -76,6 +87,15 @@ nav.socialmedia {
     display: flex;
     justify-content: center;
     margin-left: auto;
+}
+
+/* About CSS */
+heading {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 16px;
 }
 
 .hero {
@@ -136,6 +156,7 @@ section .adventure, section .history {
     grid-template-columns: 1fr 1fr;
 }
 
+/* Contact CSS */
 .information , .information p {
     text-align: center;
     margin: 0;
@@ -157,8 +178,14 @@ section .adventure, section .history {
 form {
     display: grid;
     grid-template-columns: 1fr;
+    width: 400px;
     color: var(--accent1-color);
     border: 1px solid var(--accent1-color);
+}
+
+.form-image img{
+    width: 345px;
+    padding: 10px;
 }
 
 fieldset.username {
@@ -218,22 +245,6 @@ button {
 .employee img {
     width: 150px;
     height: auto;
-}
-
-footer p {
-    text-align: center;
-    flex-grow: 1;
-    margin-right: auto;
-}
-
-footer {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    margin: 0 auto;
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    width: auto;
 }
 
 /* index CSS */
@@ -305,9 +316,10 @@ section {
     width: 300px;
     background-color: var(--primary-color);
     border: none;
+    color: white;
 }
 
-.call-to-action a {
+.call-to-action a  {
     color: white;
     text-decoration: none;
 }
